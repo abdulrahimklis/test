@@ -1,0 +1,32 @@
+#itemid{
+  display: inline-block;
+  height: 150px;
+  width: 150px;
+  margin-top: 5px;
+}
+#itemid div:hover {
+  padding: 3px solid #f5c238;
+}
+
+#itemid div:focus img{
+  border: 3px solid green;
+}
+.dodano{
+
+}
+
+.item {
+  overflow: hidden;
+  border: 5px solid #f8f8f8;
+}
+.item:hover{
+  border: 5px solid yellow;
+}
+
+.item .image {
+  height: 150px;
+}
+
+.active {
+  border: 5px solid green;
+}

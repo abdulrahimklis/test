@@ -1,0 +1,14 @@
+<section id="mainsectionid">
+  <div class="overslofcontainer">
+
+    <div *ngIf="!showMine">
+      <app-item *ngFor="let item of items | filters:[type, search] | filterByCountry:[selectedCountry] | filterByGenre:[selectedGenre] | sort:['name']" [item]="item"></app-item>
+    </div>
+
+    <div *ngIf="showMine">
+      <app-item *ngFor="let item of myItems | filters:[type, search] | filterByCountry:[selectedCountry] | filterByGenre:[selectedGenre] | sort:['name']" [item]="item"></app-item>
+    </div>
+
+  </div>
+  <button class="btn btn-primary" style="position: absolute; right: 20px; bottom: 400px; width: 200px;" (click)="checkSelected()">Publish</button>
+</section>

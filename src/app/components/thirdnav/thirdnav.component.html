@@ -1,0 +1,30 @@
+<section style="padding: 0;margin: 0;" id="thirdid">
+  <div class="selectopcija grid-item">
+    <select style="margin-left: 5px;" class="form-control form-control-sm">
+      <option disabled>Genre</option>
+      <option *ngFor="let genre of genres">{{genre.name}}</option>
+    </select>
+  </div>
+  <div class="selectopcija grid-item">
+    <select class="form-control form-control-sm" (change)="onCountrySelect($event.target.value)">
+      <option disabled>Country</option>
+      <option *ngFor="let country of countries">{{country.name}}</option>
+    </select>
+  </div>
+  <div class="selectopcija grid-item">
+    <select class="form-control form-control-sm">
+      <option disabled>Sort</option>
+      <option *ngFor="let singer of sortby">{{singer.name}}</option>
+    </select>
+  </div>
+  <div class="grid-item"></div>
+  <div class="grid-item"></div>
+  <div class="grid-item"></div>
+  <div class="neselectopcija grid-item">
+    <label class="mdl-switch mdl-js-switch mdl-js-ripple-effect" for="switch-1">
+      <input type="checkbox" id="switch-1" class="mdl-switch__input" checked>
+      <span class="mdl-switch__label"></span>
+    </label>
+  </div>
+  <div class="grid-item"></div>
+</section>

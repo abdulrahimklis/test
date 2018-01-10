@@ -1,0 +1,19 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<section id="main-body">
+
+  <app-first-nav class="header1" (onSearch)="onSearched($event)"></app-first-nav>
+
+  <app-secondnav class="header2"></app-secondnav>
+
+  <app-thirdnav class="header3" (onGenreSelected)="onGenreSelected($event)" (onCountrySelected)="onCountrySelected($event)"></app-thirdnav>
+
+  <app-left class="left1"></app-left>
+
+  <app-main class="main1" [search]="search" [selectedCountry]="selectedCountry"></app-main>
+
+  <app-right class="right1" (onButtonClick)="onButtonClick($event)"></app-right>
+
+
+
+</section>
+

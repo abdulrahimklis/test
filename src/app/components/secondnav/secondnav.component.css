@@ -1,0 +1,27 @@
+#secondnavid{
+  display: grid;
+  background-color: #f8f8f8;
+  grid-template-columns: auto auto auto auto auto auto auto auto;
+  height: 70px;
+}
+
+#secondnavid div button{
+  border-radius: 0%;
+  margin-left: 20px;
+  width: 80px;
+  text-align: center;
+  margin-top: 30px;
+}
+#secondnavid div:last-child div{
+  text-align: center;
+  margin-top: 40px;
+}
+#secondnavid div:last-child div input{
+  text-align: center;
+  margin-top: 6px;
+}
+.activan{
+  border-bottom: 3px solid #f5c238;
+  font-weight: bold;
+  text-align: center;
+}

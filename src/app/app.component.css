@@ -1,0 +1,25 @@
+.header1{ grid-area: header1;  }
+.main1{ grid-area: main1; background-color: #f8f8f8; }
+.header2{ grid-area: header2; background-color: #f8f8f8; }
+.header3{ grid-area: header3; background-color: #f8f8f8; }
+.left1{ grid-area: left1; }
+.right1{ grid-area: right1; }
+
+
+#main-body{
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto;
+  grid-template-rows: auto;
+  grid-template-areas:
+    'left1 header1 header1 header1 header1 header1'
+    'left1 header2 header2 header2 right1 right1'
+    'left1 header3 header3 header3 right1 right1'
+    'left1 main1 main1 main1 right1 right1'
+    'left1 main1 main1 main1 right1 right1'
+    'left1 main1 main1 main1 right1 right1'
+    'left1 main1 main1 main1 right1 right1'
+    'left1 main1 main1 main1 right1 right1'
+    'left1 main1 main1 main1 right1 right1'
+    'left1 main1 main1 main1 right1 right1'
+    ;
+}

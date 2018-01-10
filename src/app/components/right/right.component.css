@@ -1,0 +1,40 @@
+#rightid{
+  display: grid;
+  height: 760px;
+  background-color: #ebebeb;
+}
+
+
+#rightid label{
+  display: block;
+  margin: 20px;
+  width: 200px;
+}
+
+#checkboxid {
+  margin-left: 55px;
+  margin-top: 70px;
+  width: 200px;
+}
+
+#rightid button{
+  display: block;
+  margin: 60px auto 0 auto;
+  width: 140px;
+  height: 40px;
+}
+
+/* Date picker */
+[type="date"] {
+  background:#fff url(https://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/calendar_2.png)  97% 50% no-repeat ;
+  border: grey solid 2px;
+  border-radius: 5px;
+  margin-left: 70px;
+  margin-top: 30px;
+}
+[type="date"]::-webkit-inner-spin-button {
+  display: none;
+}
+[type="date"]::-webkit-calendar-picker-indicator {
+  opacity: 0;
+}
